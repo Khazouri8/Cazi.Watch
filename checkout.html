@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>معلومات الدفع - ساعة كازي</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: black;
+            color: #C0C0C0;
+        }
+
+        .header {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .logo {
+            max-width: 200px;
+            margin-bottom: 10px;
+        }
+
+        .checkout-form {
+            background-color: #222;
+            padding: 30px;
+            border-radius: 10px;
+            margin: auto;
+            width: 350px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        input[type="text"], select {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            background-color: #444;
+            color: white;
+            transition: background-color 0.3s;
+        }
+
+        input[type="text"]:focus, select:focus {
+            background-color: #555;
+            outline: none;
+        }
+
+        .submit-button {
+            background-color: #ffffff;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+            width: 100%;
+        }
+
+        .submit-button:hover {
+            background-color: #08d33e;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: black;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <img src="خزور (1) (1).png" alt="شعار كازي" class="logo">
+</div>
+
+<div class="checkout-form">
+    <h2>معلومات الدفع</h2>
+    <form action="https://formsubmit.co/khazouri8@gmail.com" method="POST">
+        <!-- Add hidden fields for Formsubmit.co -->
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html"> <!-- Replace with your thank you page -->
+        
+        <!-- Add name attributes to all form fields -->
+        <input type="text" id="name" name="name" placeholder="الاسم الكامل" required>
+        <input type="text" id="phone" name="phone" placeholder="رقم الهاتف" required>
+        <select id="location" name="location" required>
+            <option value="" disabled selected>اختر المدينة</option>
+            <option value="طرابلس">طرابلس</option>
+            <option value="بنغازي">بنغازي</option>
+            <option value="مصراتة">مصراتة</option>
+            <option value="سبها">سبها</option>
+            <option value="زاوية">زاوية</option>
+            <option value="ككلة"> ككلة</option>
+            <option value="طبرق">طبرق</option>
+            <option value="الكفرة">الكفرة</option>
+            <option value="سرت">سرت</option>
+            <option value="الأبيار">الأبيار</option>
+            <option value="درنة">درنة</option>
+            <option value="الزاوية">الزاوية</option>
+            <option value="المرج">المرج</option>
+            <option value="غريان">غريان</option>
+            <option value="ترهونة">ترهونة</option>
+            <option value="نالوت">نالوت</option>
+            <option value="بني وليد">بني وليد</option>
+            <option value="زوارة"> زوارة</option>
+            <option value="البيضاء">البيضاء</option>
+            <option value="اجدابيا">اجدابيا</option>
+            <option value="مسلاتة">مسلاتة</option>
+            <option value="صبراتة">صبراتة</option>
+        </select>
+        <input type="text" id="extraInfo" name="extraInfo" placeholder="معلومات إضافية (اختياري)">
+        <button type="submit" class="submit-button">إرسال</button>
+    </form>
+</div>
+
+<footer>
+    <p>&copy; 2025 Khazouri co.  ساعة كازي. جميع الحقوق محفوظة لدى </p>
+</footer>
+
+</body>
+</html>
