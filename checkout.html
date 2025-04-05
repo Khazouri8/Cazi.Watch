@@ -45,17 +45,17 @@
             border: none;
             border-radius: 5px;
             background-color: #444;
-            color: rgb(108, 107, 107);
+            color: white;
             transition: background-color 0.3s;
         }
 
         input[type="text"]:focus, select:focus {
-            background-color: #000000;
+            background-color: #555;
             outline: none;
         }
 
         .submit-button {
-            background-color: #fcfafa;
+            background-color: #ffffff;
             border: none;
             padding: 12px 20px;
             border-radius: 5px;
@@ -63,13 +63,22 @@
             font-size: 16px;
             transition: background-color 0.3s;
             width: 100%;
+            color: black; /* Added to make button text black */
         }
 
         .submit-button:hover {
             background-color: #08d33e;
+            color: black; /* Ensure text stays black on hover */
         }
 
-       
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: black;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
     </style>
 </head>
 <body>
@@ -81,11 +90,9 @@
 <div class="checkout-form">
     <h2>معلومات الدفع</h2>
     <form action="https://formsubmit.co/khazouri8@gmail.com" method="POST">
-        <!-- Add hidden fields for Formsubmit.co -->
         <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html"> <!-- Replace with your thank you page -->
+        <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html">
         
-        <!-- Add name attributes to all form fields -->
         <input type="text" id="name" name="name" placeholder="الاسم الكامل" required>
         <input type="text" id="phone" name="phone" placeholder="رقم الهاتف" required>
         <select id="location" name="location" required>
@@ -118,7 +125,9 @@
     </form>
 </div>
 
-
+<footer>
+    <p>&copy; 2025 Khazouri co.  ساعة كازي. جميع الحقوق محفوظة لدى </p>
+</footer>
 
 </body>
 </html>
